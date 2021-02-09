@@ -77,7 +77,7 @@ function a11yProps(index) {
 export default function App() {
   const classes = useStyles();
     const [value, setValue] = React.useState(1);
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
     const handleClose = () => {
@@ -95,7 +95,7 @@ export default function App() {
         headerTitle="Atendimento"
         botAvatar={imgLogo}
         placeholder="Digite sua mensagem"
-        enableMobileAutoFocus={false}
+        enableMobileAutoFocus={true}
         hideUserAvatar={true}
         floating={false}
         enableSmoothScroll={true}
