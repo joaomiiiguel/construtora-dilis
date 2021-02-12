@@ -7,6 +7,10 @@
 model-viewer{
   height: 70vh;
   width: 100%;
+  
+}
+model-viewer:focus{
+  border: none;
 }
 
 #ar-button{
@@ -21,4 +25,10 @@ model-viewer{
 .btnAR{
   width: 30px;
   height: 30px;
+}
+
+.rsc{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }

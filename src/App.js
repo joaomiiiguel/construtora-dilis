@@ -209,26 +209,68 @@ export default function App() {
           {
             id: 'PCond',
             options: [
-              { value: 'churrasqueira', label: 'Churrasqueira', trigger: '11' },
-              { value: 'piscina', label: 'Piscina', trigger: '11' },
-              { value: 'salaofesta', label: 'Salao de Festa', trigger: '11' },
-              { value: 'escationamento', label: 'Escationamento', trigger: '11' },
-              { value: 'kids', label: 'Area kids', trigger: '11' },
+              { value: 'churrasqueira', label: 'Churrasqueira', trigger: 'SelectChurras' },
+              { value: 'piscina', label: 'Piscina', trigger: 'SelectPisc' },
+              { value: 'salaofesta', label: 'Salao de Festa', trigger: 'SelectFest' },
+              { value: 'escationamento', label: 'Escationamento', trigger: 'SelectEsta' },
+              { value: 'kids', label: 'Area kids', trigger: 'SelectKids' },
             ],
           },
           {
-            id: '11',
-            message: 'Sério? Eu também acho super importante! E do apartamento?',
+            id: 'SelectChurras',
+            message: 'Churrasqueira? Eu também acho super importante! E do apartamento?',
+            trigger: 'PApto',
+          },
+          
+          {
+            id: 'SelectPisc',
+            message: 'Piscina? Eu também acho bom! E do apartamento?',
             trigger: 'PApto',
           },
           {
+            id: 'SelectFest',
+            message: 'Salão de Festa? Eu também acho bom! E do apartamento?',
+            trigger: 'PApto',
+          },
+          {
+            id: 'SelectEsta',
+            message: 'Estacionamento? Eu também acho bom! E do apartamento?',
+            trigger: 'PApto',
+          },
+          {
+            id: 'SelectKids',
+            message: 'Espaço Kids? Eu também acho bom! E do apartamento?',
+            trigger: 'PApto',
+          },
+
+          {
             id: 'PApto',
             options: [
-              { value: 'NumeroQuartos', label: 'Quant de Quartos', trigger: '12' },
-              { value: 'Sala', label: 'Sala', trigger: '12' },
-              { value: 'Varanda', label: 'Varanda', trigger: '12' },
-              { value: 'CozinhaGrande', label: 'Cozinha Grande', trigger: '12' },
+              { value: 'NumeroQuartos', label: 'Número de Quartos', trigger: 'SelectQuarto' },
+              { value: 'Sala', label: 'Sala', trigger: 'SelectSala' },
+              { value: 'Varanda', label: 'Varanda', trigger: 'SelectVaranda' },
+              { value: 'CozinhaGrande', label: 'Cozinha Grande', trigger: 'SelectCozinha' },
             ],
+          },
+          {
+            id: 'SelectQuarto',
+            message: 'A quantidade de quarto é algo muito importante mesmo!',
+            trigger: '12'
+          },
+          {
+            id: 'SelectSala',
+            message: 'Uma sala bem estruturada faz a diferença',
+            trigger: '12'
+          },
+          {
+            id: 'SelectVaranda',
+            message: 'Eita uma varanda...',
+            trigger: '12'
+          },
+          {
+            id: 'SelectCozinha',
+            message: 'A cozinha é o coração da casa, então tem que ser grande.',
+            trigger: '12'
           },
           {
             id: '12',

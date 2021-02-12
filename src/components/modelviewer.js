@@ -15,11 +15,11 @@ export default function modelviewer() {
                 ios-src={ModelUsdz}
                 alt='Building Dilis'
                 ar
-                loading='lazy'
+                ar-scale="auto"
+                ar-modes="webxr scene-viewer quick-look"
                 camera-controls
                 autoplay
                 auto-rotate>
-
                 <Button slot="ar-button" id="ar-button">
                     <img src={btnAR} className="btnAR"/>
                 </Button>
