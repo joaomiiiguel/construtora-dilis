@@ -288,9 +288,6 @@ export default function App() {
 
   return (
     <div className="App">
-      <Helmet>
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-      </Helmet>
       <ThemeProvider theme={theme}  >
                 <div className="TituloLocal" >
                     <h1 style={{ fontWeight: "900", marginBottom: 0}} >RESIDENCIAL DILIS</h1>
