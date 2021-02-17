@@ -15,16 +15,19 @@ model-viewer:focus{
 
 #ar-button{
   position: fixed;
-  right: 10px;
-  top: 50px;
+  width: 60%;
+  right: 20%;
+  bottom: 7%;
   background-color: #6e48aa;
-  border-radius: 50%;
-  padding: 16px 0px;
+  border-radius: 20px;
+  padding: 5px 1px;
   box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+  color: white;
 }
 .btnAR{
   width: 30px;
   height: 30px;
+  margin-right: 5px;
 }
 
 .rsc{

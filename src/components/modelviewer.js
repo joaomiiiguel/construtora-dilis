@@ -16,7 +16,7 @@ export default function modelviewer() {
 
             <model-viewer src={ModelGlt} camera-controls autoplay ar ar-modes="scene-viewer webxr quick-look" ios-src={ModelUsdz}>
                 <Button slot="ar-button" id="ar-button">
-                    <img src={btnAR} className="btnAR"/>
+                    Visualize em seu ambiente
                 </Button>
             </model-viewer>
 
