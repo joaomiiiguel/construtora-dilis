@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import {Helmet} from "react-helmet";
+import React, { useState } from 'react';
 //import "@leoncvlt/ar-button";
 //import "@leoncvlt/ar-button/styles.css";
 import { Tabs, Tab, Typography, Box, AppBar } from '@material-ui/core';
@@ -77,7 +76,7 @@ function a11yProps(index) {
 export default function App() {
   const classes = useStyles();
     const [value, setValue] = React.useState(1);
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
     const handleClose = () => {
