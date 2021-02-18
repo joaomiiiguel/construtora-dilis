@@ -289,8 +289,8 @@ export default function App() {
     <div className="App">
       <ThemeProvider theme={theme}  >
                 <div className="TituloLocal" >
-                    <h1 style={{ fontWeight: "900", marginBottom: 0}} >RESIDENCIAL DILIS</h1>
-                    <h2 style={{ fontWeight: "400", marginTop: 0 }}>RUA PEDRO I, 81 - CENTRO</h2>
+                    <h1 >RESIDENCIAL DILIS</h1>
+                    <h3>RUA PEDRO I, 81 - CENTRO</h3>
                 </div>
                 
                 <TabPanel value={value} index={0}>
