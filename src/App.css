@@ -12,7 +12,9 @@ model-viewer{
 model-viewer:focus{
   border: none;
 }
-
+.TituloLocal{
+  height: 10vh;
+}
 #ar-button{
   position: fixed;
   width: 60%;
