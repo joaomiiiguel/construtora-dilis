@@ -1,20 +1,23 @@
 import React from 'react'
-//import { GoogleMap, Marker } from "react-google-maps"
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import "leaflet/dist/leaflet.css";
 
-/*const MyMapComponent = (props) =>
-  <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
-  >
-    {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
-  </GoogleMap>
-*/
 export default function Maps(props) {
-    return (
-        <div>
-            <h1>Mapa</h1>
+  const position = [-7.2232, -35.8907]
+  return (
+    <div>
+      <MapContainer center={position} zoom={14}>
+        <TileLayer
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <Marker position={position}>
+          <Popup>
+            A pretty CSS3 popup. <br /> Easily customizable.
+          </Popup>
+        </Marker>
+      </MapContainer>
 
-            
-        </div>
-    )
+    </div>
+  )
 }

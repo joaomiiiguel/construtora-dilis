@@ -76,7 +76,7 @@ function a11yProps(index) {
 export default function App() {
   const classes = useStyles();
     const [value, setValue] = React.useState(1);
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
     const handleClose = () => {
